@@ -36,9 +36,15 @@ public abstract class Animal {
     //methods that all children will have access to
 
     //will need to be overriden by child classes
-    public String move();
-    public String breath();
-    public String reproduce();
+    public String move(){
+        return "test";
+    }
+    public String breath(){
+        return "test";
+    }
+    public String reproduce(){
+        return "test";
+    }
 
 
     @Override
