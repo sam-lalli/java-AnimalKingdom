@@ -2,7 +2,7 @@ package animalkingdom;
 
 public abstract class Animal {
     //protected properties, private to user but public to child sub class
-    protected static int maxId = 0;
+    protected static int maxId = -1;
     protected int id;
     protected String name;
     protected int yearNamed;
@@ -49,7 +49,7 @@ public abstract class Animal {
 
     @Override
     public String toString() {
-        return "ID: " + id + "\n" +
+        return "\n" + "ID: " + id + "\n" +
         "Name: " + name + "\n" +
         "Year Named: " + yearNamed;
     }
