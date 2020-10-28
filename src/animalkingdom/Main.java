@@ -33,9 +33,8 @@ public class Main {
 
 
         //alphabetically
-        // Collections.sort(animalList);
-        // animalList.sort((a1, a2) -> compare(a1.getName(), a2.getName(() ? 1 : -1));
-        // animalList.forEach(a -> System.out.println(a.getName()));
+        animalList.sort((a1, a2) -> (a1.getName().compareToIgnoreCase(a2.getName())));
+        System.out.println(animalList);
         ////BROKENNNNNN BROKENNNN//
 
 
@@ -49,13 +48,12 @@ public class Main {
 
         //animals named in year 1758
         printFilteredList(animalList, (a) -> a.getYearNamed() == 1758);
-        //Works
+        //WORKS
 
 
 
 
     }
-
 
     public static void printFilteredList(List<Animal> animalList, AnimalTester animalTester) {
         for (Animal a : animalList) {
