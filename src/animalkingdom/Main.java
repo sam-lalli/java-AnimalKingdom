@@ -35,7 +35,7 @@ public class Main {
         //alphabetically
         animalList.sort((a1, a2) -> (a1.getName().compareToIgnoreCase(a2.getName())));
         System.out.println(animalList);
-        ////BROKENNNNNN BROKENNNN//
+        ////WORKS
 
 
         //only breath with lungs
